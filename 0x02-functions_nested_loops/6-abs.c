@@ -3,7 +3,7 @@
 /**
 *_abs - Function to obtain absolute value
 *@a: First arguement
-* 
+*
 * Return: 1 if successful
 */
 
