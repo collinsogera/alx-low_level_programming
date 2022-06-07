@@ -9,15 +9,27 @@
 */
 int main(void)
 {
-	int ret = _putchar('_');
-	int p = _putchar('p');
-	int u = _putchar('u');
-	int t = _putchar('t');
-	int c = _putchar('c');
-	int h = _putchar('h');
-	int a = _putchar('a');
-	int r = _putchar('r');
-	int n = _putchar('\n');
+	/*Local variable declaration*/
+	int ret;
+	int p;
+	int u;
+	int t;
+	int c;
+	int h;
+	int a;
+	int r;
+	int n;
+
+	/*Calling function _putchar*/
+	ret = _putchar('_');
+	p = _putchar('p');
+	u = _putchar('u');
+	t = _putchar('t');
+	c = _putchar('c');
+	h = _putchar('h');
+	a = _putchar('a');
+	r = _putchar('r');
+	n = _putchar('\n');
 
 	return (0);
 }
