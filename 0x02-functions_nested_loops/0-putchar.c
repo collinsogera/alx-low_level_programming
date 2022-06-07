@@ -1,11 +1,11 @@
-#include <stdio.h>
-#include "_putchar.c"
+#include "main.h"
 
 /**
 *main - Starting point of program
 *
-*Description: Program to print _putchar
-*Return: 1 success -1 error
+* Description: Display output using a function
+*
+* Return: 1 if success
 */
 int main(void)
 {
