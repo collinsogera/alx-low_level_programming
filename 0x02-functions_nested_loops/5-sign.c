@@ -8,12 +8,12 @@
 */
 int print_sign(int c)
 {
-	if (n > 0)
+	if (c > 0)
 	{
 		_putchar('+');
 		return (1);
 	}
-	if else(n == 0)
+	if else(c == 0)
 	{
 		_putchar('0');
 		return (0);
