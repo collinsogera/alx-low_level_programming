@@ -20,15 +20,24 @@ void print_to_98(int n)
 			n++;
 		}
 	}
-	else
+	else if (n > 98)
 	{
 		while (n >= 98)
 		{
 			_putchar(n);
 			if (n != 98)
+			{
 				_putchar(',');
+			}
 			n--;
 		}
 	}
+	else
+	{
+		char *c = '98';
+
+		_putchar(*c);
+	}
+
 }
 
