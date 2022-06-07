@@ -2,11 +2,12 @@
 
 /**
 *print_last_digit - Function to print last digit
+*@l: First arguement
 *
 *Return: ret is the remainder which should be the last digit
 *
 */
-int print_last_digit(int)
+int print_last_digit(int l)
 {
 	int a;
 
@@ -14,5 +15,5 @@ int print_last_digit(int)
 
 	ret = a % 10;
 
-	return ret;
+	return (ret);
 }
