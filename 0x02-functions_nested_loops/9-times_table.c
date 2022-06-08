@@ -13,7 +13,11 @@ void times_table(void)
 		{
 			prod = num1 * num2;
 
-			if (prod <= 9)
+			if (prod == 0)
+			{
+				_putchar((prod % 10) + '0');
+			}
+			else if (prod >= 1 && prod <= 9)
 			{
 				_putchar(' ');
 				_putchar((prod % 10) + '0');
@@ -29,9 +33,6 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
-		if (num1 < 9)
-		{
 		_putchar('\n');
-		}
 	}
 }
