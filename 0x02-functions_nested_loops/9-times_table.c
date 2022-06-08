@@ -29,6 +29,9 @@ void times_table(void)
 				_putchar(' ');
 			}
 		}
+		if (num1 < 9)
+		{
 		_putchar('\n');
+		}
 	}
 }
