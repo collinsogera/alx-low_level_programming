@@ -3,6 +3,8 @@
 /**
 *main - Function to print 1 - 100 while
 *considering multiples of 3 and 5
+*
+* Return: Results of 1 - 100
 */
 int main(void)
 {
