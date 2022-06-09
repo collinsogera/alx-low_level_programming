@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
 *_isdigit - Program to check for a digit
 *@c: digit parameter
@@ -16,3 +15,4 @@ int _isdigit(int c)
 	else
 		return (0);
 }
+
