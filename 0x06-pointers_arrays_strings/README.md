@@ -1,1 +1,2 @@
-Directory containing more pointer, arrays and strings functions.
+Directory containing C Pointers, Arrays and Strings function programs.
+

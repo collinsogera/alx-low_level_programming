@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 /**
-*_putchar - writes the character c to stdout
-*@c: The character to print
+*_putchar - writes char c to stdout
+*@c: Character to print
 *
 *Return: On success 1
 */
