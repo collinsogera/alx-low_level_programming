@@ -10,6 +10,7 @@
 char *_strchr(char *s, char c)
 {
 	int a;
+	char *null = NULL;
 
 	for (a = 0; s[a] >= '\0'; a++)
 	{
@@ -19,6 +20,6 @@ char *_strchr(char *s, char c)
 	if (s[a] == '\0')
 		return (s + a);
 	else
-		return (NULL);
+		return (null);
 }
 
