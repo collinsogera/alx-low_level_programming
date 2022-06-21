@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-*_strchr - Locates a character in a string
-*@s: Pointer to string
-*@c: Character to locate
+*_strchr - Locate a character in a string
+*@s: First parameter
+*@c: Second parameter
 *
-*Return: Pointer to first encounter
+*Return: Pointer to first occurence of c
 */
 char *_strchr(char *s, char c)
 {
@@ -14,15 +14,14 @@ char *_strchr(char *s, char c)
 	while (s[x])
 		x++;
 
-	for (y = 0; y <= a; y++)
+	for (y = 0; y <= x; y++)
 	{
 		if (c == s[y])
 		{
-			s = s + y;
+			s += y;
 			return (s);
 		}
 	}
-
 	return ('\0');
 }
 
