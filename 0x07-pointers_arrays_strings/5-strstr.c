@@ -2,28 +2,27 @@
 
 /**
 *_strstr - Locate a substring
-*@haystack: Pointer to string haystack
-*@needle: Pointer to string needle
+*@haystack: First parameter
+*@needle: Second parameter
 *
 *Return: Pointer to beginning of substring
 */
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	int x = 0, y = 0;
+
+	while (haystack[x])
 	{
-		char *one = haystack;
-		char *two = needle;
-
-		while (*one == *two && *two != '\0')
+		while (needle[y])
 		{
-			one++;
-			two++;
+			if (haystack[x + y] != needle[y])
+				break;
+			y++;
 		}
-
-		if (*two == '\0')
-			return (haystack);
+		if (needle[y] == '\0')
+			return (haystack + x);
+		x++;
 	}
-
-	return (NULL);
+	return ('\0');
 }
 
