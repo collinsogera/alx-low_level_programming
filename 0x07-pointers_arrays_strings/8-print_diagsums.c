@@ -11,14 +11,12 @@ void print_diagsums(int *a, int size)
 
 	int m = size * size;
 
-	for (x = 0; x < m; x += size + 1)
+	for (x = 0; x < m; x++)
 	{
-		totala += a[x];
-	}
-
-	for (x = size - 1; x < m - 2; x += size - 1)
-	{
-		totalb += a[x];
+		if (x % (size + 1) == 0)
+			totala += *(a + x);
+		if (x % (size - 1) == 0 && x != 0 && x < m - 1)
+			totalb += *(a + x);
 	}
 
 	printf("%d, %d\n", totala, totalb);
