@@ -5,7 +5,7 @@
 *@a: First parameter
 *@size: second parameter
 */
-void print_diagsums(int *s, int size)
+void print_diagsums(int *a, int size)
 {
 	int x, totala = 0, totalb = 0;
 
