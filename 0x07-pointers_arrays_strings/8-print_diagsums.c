@@ -9,13 +9,11 @@ void print_diagsums(int *a, int size)
 {
 	int x, totala = 0, totalb = 0;
 
-	int m = size * size;
-
-	for (x = 0; x < m; x++)
+	for (x = 0; x < size * size; x++)
 	{
 		if (x % (size + 1) == 0)
 			totala += *(a + x);
-		if (x % (size - 1) == 0 && x != 0 && x < m - 1)
+		if (x % (size - 1) == 0 && x != 0 && x < size * size - 1)
 			totalb += *(a + x);
 	}
 
