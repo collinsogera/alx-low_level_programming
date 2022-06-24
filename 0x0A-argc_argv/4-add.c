@@ -7,7 +7,7 @@
  *@argv: arguements given
  *Return: 0 if no arguements, 1 if arguements diff than digits
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int total = 0;
 	int x;
