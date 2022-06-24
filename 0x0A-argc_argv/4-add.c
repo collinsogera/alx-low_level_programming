@@ -9,31 +9,28 @@
  */
 int main(int argc, char **argv)
 {
-	int sum = 0;
-	int argA;
-	int arg2;
+	int total = 0;
+	int x;
+	int y;
 
-	if (argc < 2)
+	if (argc > 0)
 	{
-		printf("0\n");
-		return (0);
-	}
-	else
-	{
-		for (argA = 1; argA < argc; argA++)
+		for (x = 1; x < argc; x++)
 		{
-			for (arg2 = 0; argv[argA][arg2] != '\0'; arg2++)
+			for (y = 0; argv[x][y] != '\0'; y++)
 			{
-				if (argv[argA][arg2] < '0' || argv[argA][arg2] > '9')
+				if (!(isdigit(argv[x][y])))
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-			sum += atoi(argv[arg]);
+			total += atoi(argv[x]);
 		}
+		printf("%d\n", total);
 	}
-	printf("%i\n", add);
+	else
+		printf("0\n";
 	return (0);
 }
 
