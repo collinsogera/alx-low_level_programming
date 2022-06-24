@@ -7,11 +7,17 @@
 *@argv: String of array
 *Return: 0
 */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-(void) argv;
+	int a;
 
-printf("%i\n", argc - 1);
-return (0);
+	(void)argv;
+
+	for (a = 0; a < argc; a++)
+	{
+		if (a + 1 == argc)
+			printf("%i\n", a);
+	}
+	return (0);
 }
 
