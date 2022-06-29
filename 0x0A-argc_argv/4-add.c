@@ -2,6 +2,27 @@
 #include <stdlib.h>
 
 /**
+ *is_number - Confirm if input is a number
+ *@s: Input to check
+ *
+ *Return: 1 if input is number else 0
+ */
+int is_number(char *s)
+{
+	int a;
+
+	a = 0;
+
+	while (*(s + a) != '\0')
+	{
+		if (*(s + q) >= '0' && *(s + a) <= '9')
+			a++;
+		else
+			return (0);
+	}
+	return (1);
+}
+/**
  *main - Add positive numbers
  *@argc: counter
  *@argv: arguements given
@@ -9,28 +30,30 @@
  */
 int main(int argc, char *argv[])
 {
-	int total = 0;
-	int x;
-	int y;
+	int x, total, is_num;
 
-	if (argc > 0)
+	total = 0;
+
+	if (argc == 1)
+		printf("0\n");
+	else if (argc > 1)
 	{
-		for (x = 1; x < argc; x++)
+		x = 1;
+
+		while (x < argc)
 		{
-			for (y = 0; argv[x][y] != '\0'; y++)
+			is_num = is_number(argv[1]);
+			if (is_num == 1)
+				total += atoi(argv[x]);
+			else
 			{
-				if (!(isdigit(argv[x][y])))
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
-			total += atoi(argv[x]);
+			x++;
 		}
 		printf("%d\n", total);
 	}
-	else
-		printf("0\n");
 	return (0);
 }
 
