@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 /**
+ *free_grid - Free a 2D
+ *@grid: Width
+ *@height: Height
  *
- *
- *
- *
+ *Return: Pointer
  */
-void free-grid(int **grid, int height)
+void free_grid(int **grid, int height)
 {
 	int a;
 
