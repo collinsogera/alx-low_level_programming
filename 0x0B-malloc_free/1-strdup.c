@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	if (s == 0)
 		return (0);
 
-	for (b = 0l b < a; b++)
+	for (b = 0; b < a; b++)
 		*(s + b) = *(str + b);
 
 	return (s);
