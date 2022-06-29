@@ -11,7 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int a;
-	chat *s;
+	char *s;
 
 	if (size == 0)
 		return (0);
