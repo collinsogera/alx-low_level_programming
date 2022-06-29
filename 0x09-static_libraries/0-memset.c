@@ -1,15 +1,19 @@
 #include "main.h"
-#include <string.h>
 
 /**
- *_memset - Sets memory
- *@s: Parameter a
- *@b: Parameter b
- *@n: Nomber of bytes
- *
- *Return: Character
- */
+*_memset - Fills memory with constant byte
+*@s: Memory address Pointer
+*@b: Constant byte
+*@n: Bytes in memory
+*
+*Return: s
+*/
 char *_memset(char *s, char b, unsigned int n)
 {
+	unsigned int i;
 
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
 }
+
