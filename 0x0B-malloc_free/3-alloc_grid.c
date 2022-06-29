@@ -12,7 +12,7 @@ int  **alloc_grid(int width, int height)
 {
 	int **a, b, c, d;
 
-	if (width <= 0 || heoght <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	a = malloc(height * sizeof(int *));
@@ -30,7 +30,7 @@ int  **alloc_grid(int width, int height)
 			free(a);
 			return (NULL);
 		}
-		for (c = 0; c < width, c++)
+		for (c = 0; c < width; c++)
 			a[b][c] = 0;
 	}
 	return (a);
