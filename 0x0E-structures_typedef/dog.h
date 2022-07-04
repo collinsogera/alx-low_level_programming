@@ -7,7 +7,7 @@ int _putchar(char c);
  *@age: Its age
  *@owner: Who owns it
  */
-thpedef struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
@@ -17,6 +17,6 @@ thpedef struct dog
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
-thpedef struct dog dog_t;
+typedef struct dog dog_t;
 
 #endif /*  DOG_H */
