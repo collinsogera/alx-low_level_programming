@@ -25,7 +25,7 @@ int _strlen(const char *s)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	lisr_t *new;
+	list_t *new;
 	char *string;
 	int length;
 
